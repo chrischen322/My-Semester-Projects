@@ -3,7 +3,7 @@
 
 #Init
 #Function
-def crunchy_or_rainy():
+def crunchy_or_rainy():  #Inital Question to ask, generates a name from a selection pool of words, based off the user's responses.
     answer = input("Would you say you're more Crunchy(1) or Rainy(2)?")
     if answer.lower() == "crunchy" or answer == "1":
          print("Your favorite color is: Orange")
@@ -13,7 +13,7 @@ def crunchy_or_rainy():
         return True
     else:
         print("Please enter a valid response")
-def hot_or_cold():
+def hot_or_cold():  #Second Question being Asked
     answer = input("Would you say you prefer being hot(1) or cold(2)?")
     if answer.lower() == "hot" or answer == "1":
          print("Your favorite color is: Green")
@@ -23,7 +23,7 @@ def hot_or_cold():
         return True
     else:
         print("Please enter a valid response")
-def sweet_or_sour():
+def sweet_or_sour(): #Third Question
     answer = input("Would you say you prefer more sweet(1) or sour(2)?")
     if answer.lower() == "sweet" or answer == "1":
         print("Your favorite color is: Red")
@@ -33,7 +33,7 @@ def sweet_or_sour():
         return True
     else:
         print("Please enter a valid response")
-def lovely_or_wine():
+def lovely_or_wine(): #Fourth Question
     answer = input("Would you say you prefer more lovely(1) or wine(2)?")
     if answer.lower() == "lovely" or answer == "1":
         print("Your favorite color is: Pink")
@@ -44,7 +44,7 @@ def lovely_or_wine():
     else:
         print("Please enter a valid response")
         return False
-def pumpkin_or_melon():
+def pumpkin_or_melon():  #Fifth Question
     answer = input("Would you say you prefer more pumpkins(1) or melons(2)?")
     if answer.lower() == "pumpkins" or answer == "1":
         go = False
@@ -57,7 +57,7 @@ def pumpkin_or_melon():
     else:
         print("Please enter a valid response")
         return False
-def berry_or_grape():
+def berry_or_grape(): #Sixth Question
     answer = input("Would you say you prefer more berry(1) or grape(2)?")
     if answer.lower() == "berry" or answer == "1":
         go = False
@@ -70,7 +70,7 @@ def berry_or_grape():
     else:
         print("Please enter a valid response")
         return False
-def big_or_small():
+def big_or_small():  #Seventh Question
     answer = input("Are you Big(1) or Small(2)")
     if answer.lower() == "big" or answer == "1":
         go = False
@@ -80,7 +80,7 @@ def big_or_small():
         go = False
         while go == False:
             go = berry_or_grape()
-def quizzington():
+def quizzington():  #Runs all the questions
     go = False
     while go == False:
         go = big_or_small()
