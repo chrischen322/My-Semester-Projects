@@ -13,15 +13,15 @@ def game():
     print("Welcome to Rock Paper Scissors!")
     while True:
         print("Make your move. Pick one of the following: ROCK, PAPER, SCISSORS")
-        player = input("Rock, Paper, Scissors, Go: ")
-        system = random.randint(1,3)
+        player = input("Rock, Paper, Scissors, Go: ") #Asks the user to pick either rock, paper or scissors.
+        system = random.randint(1,3) #Computer is randomly generating either rock, paper or scissors.
         if system == 1:
             system = "ROCK"
         if system == 2:
             system = "PAPER"
         if system == 3:
             system = "SCISSORS"
-        if player == "ROCK" and system == "PAPER":
+        if player == "ROCK" and system == "PAPER":  #Different Interactions
             print("You Lose! The computer picked: " + system)
             losses = losses + 1
         if player == "ROCK" and system == "ROCK":
@@ -48,7 +48,7 @@ def game():
         if player == "SCISSORS" and system == "SCISSORS":
             print("The game ended in a tie! The computer picked: " + system)
             ties = ties + 1
-        playagain = input("Would you like to play again?")
+        playagain = input("Would you like to play again?")  #If "No", system stops. If "Yes" or any other response, the system will loop the game
         if playagain == "No":
                 break
 
