@@ -19,3 +19,5 @@ CREATE PROJECT - This is a program that contains a list of ~100 unique fruits fr
 
 SLOT MACHINE - This program is a game that allows the user to bet any amount of coins, given the 100 they start with. ["7","♣","♠"] These are the 3 symbols that are used for the program. If the clovers or spades line up (3 in a column), the user wins the round and gain 100 points back. If the 7 symbol lines up three times in a column, the user wins the jackpot and wins 1,000 coins. Otherwise the amount used for the bet is lost.
 
+TETRIS SCORES - This program contains a list of the the official highest tetris scores. The user can enter their own scores into the list and see where they would place globally, or run any of the functions that allow the user to find the highest score, lowest score and average score. 
+
